@@ -54,26 +54,26 @@ export default function Home() {
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
                 <p className="mb-4">
-                  "The quality of the pitching machines is incredible. I&apos;ve
+                  The quality of the pitching machines is incredible. I&apos;ve
                   seen a real improvement in my batting average since training
-                  here."
+                  here.
                 </p>
                 <p className="font-bold">- Mike R., High School Athlete</p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
                 <p className="mb-4">
-                  "As a softball coach, I recommend Elevate Sports Garage to all
+                  As a softball coach, I recommend Elevate Sports Garage to all
                   my players. The facility is top-notch and the staff is
-                  knowledgeable."
+                  knowledgeable.
                 </p>
                 <p className="font-bold">- Sarah T., Softball Coach</p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
                 <p className="mb-4">
-                  "Finally, a professional batting facility in Canyon Lake! The
-                  24/7 access fits perfectly with my training schedule."
+                  Finally, a professional batting facility in Canyon Lake! The
+                  24/7 access fits perfectly with my training schedule.
                 </p>
                 <p className="font-bold">- James L., College Player</p>
               </div>
