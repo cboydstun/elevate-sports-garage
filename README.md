@@ -68,5 +68,3 @@ npm run start
 ## License
 
 Private - All rights reserved
-
-smol change
