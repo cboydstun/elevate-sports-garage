@@ -1,101 +1,145 @@
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="min-h-screen flex flex-col">
+      <Header />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <section className="bg-black text-white py-20 px-6 md:px-12">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center md:items-center md:gap-12">
+              <Image
+                src="/logo.png"
+                alt="Elevate Sports Garage Logo"
+                width={200}
+                height={200}
+                className="mb-8 md:mb-0"
+                priority
+              />
+              <div className="text-center md:text-left flex-1">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                  Elevate Your Game at{" "}
+                  <span className="text-[#10ff00]">
+                    Canyon Lake&apos;s Premier
+                  </span>{" "}
+                  Batting Facility
+                </h1>
+                <p className="text-xl mb-8 text-gray-300">
+                  Professional-grade batting cages equipped with
+                  state-of-the-art pitching machines for baseball and softball
+                  players of all skill levels.
+                </p>
+                <a
+                  href="#map"
+                  className="inline-block bg-[#10ff00] text-black font-bold py-4 px-8 rounded-full hover:bg-[#0dd000] transition-colors"
+                >
+                  Start Training Today
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof */}
+        <section className="py-16 px-6 md:px-12 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              What Our Athletes Say
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
+                <p className="mb-4">
+                  "The quality of the pitching machines is incredible. I&apos;ve
+                  seen a real improvement in my batting average since training
+                  here."
+                </p>
+                <p className="font-bold">- Mike R., High School Athlete</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
+                <p className="mb-4">
+                  "As a softball coach, I recommend Elevate Sports Garage to all
+                  my players. The facility is top-notch and the staff is
+                  knowledgeable."
+                </p>
+                <p className="font-bold">- Sarah T., Softball Coach</p>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
+                <p className="mb-4">
+                  "Finally, a professional batting facility in Canyon Lake! The
+                  24/7 access fits perfectly with my training schedule."
+                </p>
+                <p className="font-bold">- James L., College Player</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Unique Selling Propositions */}
+        <section className="py-16 px-6 md:px-12 bg-black text-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Why Choose{" "}
+              <span className="text-[#10ff00]">Elevate Sports Garage</span>
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-[#10ff00] text-4xl mb-4">📍</div>
+                <h3 className="text-xl font-bold mb-4">Prime Location</h3>
+                <p className="text-gray-300">
+                  Conveniently located in Canyon Lake, Texas, serving the entire
+                  Hill Country area with easy access and ample parking.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-[#10ff00] text-4xl mb-4">🎯</div>
+                <h3 className="text-xl font-bold mb-4">Pro-Grade Equipment</h3>
+                <p className="text-gray-300">
+                  State-of-the-art pitching machines with adjustable speeds and
+                  pitch types for both baseball and softball.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-[#10ff00] text-4xl mb-4">⚡</div>
+                <h3 className="text-xl font-bold mb-4">Extended Hours</h3>
+                <p className="text-gray-300">
+                  Open early and late to accommodate your training schedule,
+                  with membership options for 24/7 access.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Location Map */}
+        <section id="map" className="py-16 px-6 md:px-12 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Come Practice Your Swing!
+            </h2>
+            <div className="flex justify-center">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4059.7589052757603!2d-98.17414594905412!3d29.850352463547456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c9f051d3cd725%3A0x718ff5cc2ccd38e6!2s1270%20Sattler%20Rd%2C%20New%20Braunfels%2C%20TX%2078132!5e1!3m2!1sen!2sus!4v1736277681156!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full max-w-3xl rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+      <Footer />
     </div>
   );
 }
