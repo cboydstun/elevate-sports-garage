@@ -44,38 +44,145 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Social Proof */}
+        {/* Membership Plans */}
+        <section className="py-16 px-6 md:px-12 bg-black text-white">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Choose Your <span className="text-[#10ff00]">Membership</span> Level
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Silver Membership */}
+              <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-4 text-center">Silver</h3>
+                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">$79<span className="text-lg text-gray-400">/month</span></div>
+                <ul className="space-y-4 flex-grow">
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Weekday access (12 PM - 5 PM)
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Basic pitching machine settings
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Online booking system
+                  </li>
+                </ul>
+                <button className="w-full bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-[#10ff00] transition-colors">
+                  Select Plan
+                </button>
+              </div>
+
+              {/* Gold Membership */}
+              <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-4 text-center">Gold</h3>
+                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">$129<span className="text-lg text-gray-400">/month</span></div>
+                <ul className="space-y-4 flex-grow">
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Full weekday access (6 AM - 10 PM)
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Weekend access (8 AM - 8 PM)
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Advanced pitching machine settings
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Video analysis tools
+                  </li>
+                </ul>
+                <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 rounded-full hover:bg-white transition-colors">
+                  Select Plan
+                </button>
+              </div>
+
+              {/* Platinum Membership */}
+              <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
+                <h3 className="text-2xl font-bold mb-4 text-center">Platinum</h3>
+                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">$199<span className="text-lg text-gray-400">/month</span></div>
+                <ul className="space-y-4 flex-grow">
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    24/7 facility access
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Premium pitching machine settings
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Personal locker
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Priority booking
+                  </li>
+                  <li className="flex items-center">
+                    <span className="text-[#10ff00] mr-2">✓</span>
+                    Monthly technique assessment
+                  </li>
+                </ul>
+                <button className="w-full bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-[#10ff00] transition-colors">
+                  Select Plan
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Additional Benefits */}
         <section className="py-16 px-6 md:px-12 bg-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
-              What Our Athletes Say
+              Additional <span className="text-[#10ff00]">Benefits</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
-                <p className="mb-4">
-                  The quality of the pitching machines is incredible. I&apos;ve
-                  seen a real improvement in my batting average since training
-                  here.
+              <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🎮</div>
+                <h3 className="text-xl font-bold mb-4">Virtual Reality Training</h3>
+                <p className="text-gray-700">
+                  Train with your own virtual reality hitting profile, tracking your progress and perfecting your technique with advanced analytics.
                 </p>
-                <p className="font-bold">- Mike R., High School Athlete</p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
-                <p className="mb-4">
-                  As a softball coach, I recommend Elevate Sports Garage to all
-                  my players. The facility is top-notch and the staff is
-                  knowledgeable.
+              <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">👥</div>
+                <h3 className="text-xl font-bold mb-4">Team Practice</h3>
+                <p className="text-gray-700">
+                  Special discounts available for team practices. Perfect for baseball and softball teams looking to enhance their batting skills together.
                 </p>
-                <p className="font-bold">- Sarah T., Softball Coach</p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <div className="flex items-center mb-4">{"⭐".repeat(5)}</div>
-                <p className="mb-4">
-                  Finally, a professional batting facility in Canyon Lake! The
-                  24/7 access fits perfectly with my training schedule.
+              <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">👨‍👩‍👧‍👦</div>
+                <h3 className="text-xl font-bold mb-4">Family Packages</h3>
+                <p className="text-gray-700">
+                  Sibling discounts available - make it fun for the whole family! Build lasting memories while improving skills together.
                 </p>
-                <p className="font-bold">- James L., College Player</p>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">⚾</div>
+                <h3 className="text-xl font-bold mb-4">Advanced Pitch Training</h3>
+                <p className="text-gray-700">
+                  Top-tier pitching machines help you master curve balls and rise balls! Perfect your technique against various pitch types.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🏏</div>
+                <h3 className="text-xl font-bold mb-4">Tater Ball Technology</h3>
+                <p className="text-gray-700">
+                  Use your game bat (wood or composite) with our special Tater balls - get authentic practice without damaging your equipment.
+                </p>
+              </div>
+              <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">🔄</div>
+                <h3 className="text-xl font-bold mb-4">Reduced Impact</h3>
+                <p className="text-gray-700">
+                  Experience less sting on hands and wrists with our innovative batting technology, allowing for longer, more comfortable practice sessions.
+                </p>
               </div>
             </div>
           </div>
