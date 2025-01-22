@@ -48,13 +48,16 @@ export default function Home() {
         <section className="py-16 px-6 md:px-12 bg-black text-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
-              Choose Your <span className="text-[#10ff00]">Membership</span> Level
+              Choose Your <span className="text-[#10ff00]">Membership</span>{" "}
+              Level
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Silver Membership */}
               <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
                 <h3 className="text-2xl font-bold mb-4 text-center">Silver</h3>
-                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">$79<span className="text-lg text-gray-400">/month</span></div>
+                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
+                  $45<span className="text-lg text-gray-400">/month</span>
+                </div>
                 <ul className="space-y-4 flex-grow">
                   <li className="flex items-center">
                     <span className="text-[#10ff00] mr-2">✓</span>
@@ -77,7 +80,9 @@ export default function Home() {
               {/* Gold Membership */}
               <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
                 <h3 className="text-2xl font-bold mb-4 text-center">Gold</h3>
-                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">$129<span className="text-lg text-gray-400">/month</span></div>
+                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
+                  $60<span className="text-lg text-gray-400">/month</span>
+                </div>
                 <ul className="space-y-4 flex-grow">
                   <li className="flex items-center">
                     <span className="text-[#10ff00] mr-2">✓</span>
@@ -103,8 +108,12 @@ export default function Home() {
 
               {/* Platinum Membership */}
               <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-4 text-center">Platinum</h3>
-                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">$199<span className="text-lg text-gray-400">/month</span></div>
+                <h3 className="text-2xl font-bold mb-4 text-center">
+                  Platinum
+                </h3>
+                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
+                  $75<span className="text-lg text-gray-400">/month</span>
+                </div>
                 <ul className="space-y-4 flex-grow">
                   <li className="flex items-center">
                     <span className="text-[#10ff00] mr-2">✓</span>
@@ -144,44 +153,62 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🎮</div>
-                <h3 className="text-xl font-bold mb-4">Virtual Reality Training</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Virtual Reality Training
+                </h3>
                 <p className="text-gray-700">
-                  Train with your own virtual reality hitting profile, tracking your progress and perfecting your technique with advanced analytics.
+                  Train with your own virtual reality hitting profile, tracking
+                  your progress and perfecting your technique with advanced
+                  analytics.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">👥</div>
                 <h3 className="text-xl font-bold mb-4">Team Practice</h3>
                 <p className="text-gray-700">
-                  Special discounts available for team practices. Perfect for baseball and softball teams looking to enhance their batting skills together.
+                  Special discounts available for team practices. Perfect for
+                  baseball and softball teams looking to enhance their batting
+                  skills together.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">👨‍👩‍👧‍👦</div>
                 <h3 className="text-xl font-bold mb-4">Family Packages</h3>
                 <p className="text-gray-700">
-                  Sibling discounts available - make it fun for the whole family! Build lasting memories while improving skills together.
+                  Sibling discounts available - make it fun for the whole
+                  family! Build lasting memories while improving skills
+                  together.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">⚾</div>
-                <h3 className="text-xl font-bold mb-4">Advanced Pitch Training</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Advanced Pitch Training
+                </h3>
                 <p className="text-gray-700">
-                  Top-tier pitching machines help you master curve balls and rise balls! Perfect your technique against various pitch types.
+                  Top-tier pitching machines help you master curve balls and
+                  rise balls! Perfect your technique against various pitch
+                  types.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🏏</div>
-                <h3 className="text-xl font-bold mb-4">Tater Ball Technology</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Tater Ball Technology
+                </h3>
                 <p className="text-gray-700">
-                  Use your game bat (wood or composite) with our special Tater balls - get authentic practice without damaging your equipment.
+                  Use your game bat (wood or composite) with our special Tater
+                  balls - get authentic practice without damaging your
+                  equipment.
                 </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-lg text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-4">🔄</div>
                 <h3 className="text-xl font-bold mb-4">Reduced Impact</h3>
                 <p className="text-gray-700">
-                  Experience less sting on hands and wrists with our innovative batting technology, allowing for longer, more comfortable practice sessions.
+                  Experience less sting on hands and wrists with our innovative
+                  batting technology, allowing for longer, more comfortable
+                  practice sessions.
                 </p>
               </div>
             </div>
