@@ -73,7 +73,12 @@ export default function Home() {
                   </li>
                 </ul>
                 <button className="w-full bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-[#10ff00] transition-colors">
-                  Select Plan
+                  <a
+                    href="https://www.vagaro.com/cl/uftQ7gHMdHuxbk9lr95qOFporscEq8cEf-n4zx-IqFQ="
+                    target="_blank"
+                  >
+                    Select Plan
+                  </a>
                 </button>
               </div>
 
@@ -102,7 +107,12 @@ export default function Home() {
                   </li>
                 </ul>
                 <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 rounded-full hover:bg-white transition-colors">
-                  Select Plan
+                  <a
+                    href="https://www.vagaro.com/cl/DaQegUQ305Bsr6sFBZ4B3jH0uGERbapdqFbSl~Zgo8s="
+                    target="_blank"
+                  >
+                    Select Plan
+                  </a>
                 </button>
               </div>
 
@@ -137,7 +147,12 @@ export default function Home() {
                   </li>
                 </ul>
                 <button className="w-full bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-[#10ff00] transition-colors">
-                  Select Plan
+                  <a
+                    href="https://www.vagaro.com/cl/pi5RmUyanXxWwI6tndXL41qAs~2d1bWoU-rE28wHAAQ="
+                    target="_blank"
+                  >
+                    Select Plan
+                  </a>
                 </button>
               </div>
             </div>
