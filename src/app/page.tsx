@@ -1,10 +1,39 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Image from "next/image";
+import Script from "next/script";
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    name: "Elevate Sports Garage",
+    description:
+      "Professional-grade batting cages equipped with state-of-the-art pitching machines for baseball and softball players of all skill levels.",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1270 Sattler Rd",
+      addressLocality: "New Braunfels",
+      addressRegion: "TX",
+      postalCode: "78132",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "29.850352463547456",
+      longitude: "-98.17414594905412",
+    },
+    openingHours: ["Mo-Su 00:00-23:59"],
+    url: "https://elevatesportsgarage.com",
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
+      <Script
+        id="schema-org"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header />
 
       <main className="flex-grow">
@@ -47,117 +76,111 @@ export default function Home() {
         {/* Membership Plans */}
         <section className="py-16 px-6 md:px-12 bg-black text-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Choose Your <span className="text-[#10ff00]">Membership</span>{" "}
-              Level
-            </h2>
+            <div className="flex justify-center mb-12">
+              <h2 className="text-2xl text-center bg-[#8f9480] px-8 py-4 rounded-lg text-black">
+                ASK US ABOUT OUR OPENING SPECIAL <br /> SAVE YOUR PLATINUM
+                MEMBER SPOT NOW
+              </h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Silver Membership */}
               <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
-                <h3 className="text-2xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">Silver</h3>
+                <h3 className="text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
+                  Silver
+                </h3>
                 <div className="p-8 pt-0 flex-grow flex flex-col">
-                  <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
-                  $45<span className="text-lg text-black">/month</span>
-                </div>
-                <ul className="space-y-4 flex-grow">
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Weekday access (12 PM - 5 PM)
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Basic pitching machine settings
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Online booking system
-                  </li>
+                  <ul className="space-y-4 flex-grow text-black text-2xl">
+                    <li className="flex items-center">
+                      ACCESS <br /> WEEKDAY 3:30 PM - 9 PM
+                    </li>
+                    <li className="flex items-center">SHARED CAGES</li>
+                    <li className="flex items-center">45 SWINGS EVERY DAY</li>
+                    <li className="flex items-center font-bold">
+                      $5 FOR EXTRA BUCKET
+                    </li>
+                    <li className="flex items-center font-bold">
+                      10% OFF PURCHASES AND CLASSES
+                    </li>
                   </ul>
                   <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
-                  <a
-                    href="https://www.vagaro.com/cl/uftQ7gHMdHuxbk9lr95qOFporscEq8cEf-n4zx-IqFQ="
-                    target="_blank"
-                  >
-                    $45 monthly
-                  </a>
+                    <a
+                      href="https://www.vagaro.com/cl/uftQ7gHMdHuxbk9lr95qOFporscEq8cEf-n4zx-IqFQ="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center"
+                    >
+                      <span className="text-4xl">$45</span>
+                      <span className="text-sm">monthly</span>
+                    </a>
                   </button>
                 </div>
               </div>
 
               {/* Gold Membership */}
               <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
-                <h3 className="text-2xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">Gold</h3>
+                <h3 className="text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
+                  Gold
+                </h3>
                 <div className="p-8 pt-0 flex-grow flex flex-col">
-                  <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
-                  $60<span className="text-lg text-black">/month</span>
-                </div>
-                <ul className="space-y-4 flex-grow">
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Full weekday access (6 AM - 10 PM)
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Weekend access (8 AM - 8 PM)
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Advanced pitching machine settings
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Video analysis tools
-                  </li>
+                  <ul className="space-y-4 flex-grow text-black text-2xl">
+                    <li className="flex items-center">
+                      WEEKDAY AND WEEKEND ACCESS
+                    </li>
+                    <li className="flex items-center">
+                      BRING A FRIEND FOR FREE
+                    </li>
+                    <li className="flex items-center">
+                      2.5 HOURS WEEKLY + VIRTUAL BATTING
+                    </li>
+                    <li className="flex items-center font-bold">
+                      $10 FOR EXTRA HOUR
+                    </li>
+                    <li className="flex items-center font-bold">
+                      10% OFF PURCHASES AND CLASSES
+                    </li>{" "}
                   </ul>
                   <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
-                  <a
-                    href="https://www.vagaro.com/cl/DaQegUQ305Bsr6sFBZ4B3jH0uGERbapdqFbSl~Zgo8s="
-                    target="_blank"
-                  >
-                    $60 monthly
-                  </a>
+                    <a
+                      href="https://www.vagaro.com/cl/DaQegUQ305Bsr6sFBZ4B3jH0uGERbapdqFbSl~Zgo8s="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center"
+                    >
+                      <span className="text-4xl">$60</span>
+                      <span className="text-sm">monthly</span>
+                    </a>
                   </button>
                 </div>
               </div>
 
               {/* Platinum Membership */}
               <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
-                <h3 className="text-2xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
+                <h3 className="text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
                   Platinum
                 </h3>
                 <div className="p-8 pt-0 flex-grow flex flex-col">
-                  <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
-                  $75<span className="text-lg text-black">/month</span>
-                </div>
-                <ul className="space-y-4 flex-grow">
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    24/7 facility access
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Premium pitching machine settings
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Personal locker
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Priority booking
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-[#10ff00] mr-2">✓</span>
-                    Monthly technique assessment
-                  </li>
+                  <ul className="space-y-4 flex-grow text-black text-2xl">
+                    <li className="flex items-center">
+                      24/7 ACCESS <br /> (VIP CARD ACCESS)
+                    </li>
+                    <li className="flex items-center text-white">
+                      WIN REALITY PROFILE <br /> ($250 VALUE)
+                    </li>
+                    <li className="flex items-center">PRIVATE CAGE TIME</li>
+                    <li className="flex items-center font-bold">
+                      15% OFF PRUCHASES AND CLASSES
+                    </li>
                   </ul>
-                  <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
-                  <a
-                    href="https://www.vagaro.com/cl/pi5RmUyanXxWwI6tndXL41qAs~2d1bWoU-rE28wHAAQ="
-                    target="_blank"
-                  >
-                    $75 monthly
-                  </a>
+                  <button className="w-full bg-[#10ff00] text-black font-bold pt-3 px-6 hover:bg-white transition-colors">
+                    <a
+                      href="https://www.vagaro.com/cl/pi5RmUyanXxWwI6tndXL41qAs~2d1bWoU-rE28wHAAQ="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center"
+                    >
+                      <span className="text-4xl">$75</span>
+                      <span className="text-sm">monthly</span>
+                    </a>
                   </button>
                 </div>
               </div>
