@@ -53,10 +53,11 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Silver Membership */}
-              <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-4 text-center">Silver</h3>
-                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
-                  $45<span className="text-lg text-gray-400">/month</span>
+              <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
+                <h3 className="text-2xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">Silver</h3>
+                <div className="p-8 pt-0 flex-grow flex flex-col">
+                  <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
+                  $45<span className="text-lg text-black">/month</span>
                 </div>
                 <ul className="space-y-4 flex-grow">
                   <li className="flex items-center">
@@ -71,22 +72,24 @@ export default function Home() {
                     <span className="text-[#10ff00] mr-2">✓</span>
                     Online booking system
                   </li>
-                </ul>
-                <button className="w-full bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-[#10ff00] transition-colors">
+                  </ul>
+                  <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
                   <a
                     href="https://www.vagaro.com/cl/uftQ7gHMdHuxbk9lr95qOFporscEq8cEf-n4zx-IqFQ="
                     target="_blank"
                   >
-                    Select Plan
+                    $45 monthly
                   </a>
-                </button>
+                  </button>
+                </div>
               </div>
 
               {/* Gold Membership */}
-              <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-4 text-center">Gold</h3>
-                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
-                  $60<span className="text-lg text-gray-400">/month</span>
+              <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
+                <h3 className="text-2xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">Gold</h3>
+                <div className="p-8 pt-0 flex-grow flex flex-col">
+                  <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
+                  $60<span className="text-lg text-black">/month</span>
                 </div>
                 <ul className="space-y-4 flex-grow">
                   <li className="flex items-center">
@@ -105,24 +108,26 @@ export default function Home() {
                     <span className="text-[#10ff00] mr-2">✓</span>
                     Video analysis tools
                   </li>
-                </ul>
-                <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 rounded-full hover:bg-white transition-colors">
+                  </ul>
+                  <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
                   <a
                     href="https://www.vagaro.com/cl/DaQegUQ305Bsr6sFBZ4B3jH0uGERbapdqFbSl~Zgo8s="
                     target="_blank"
                   >
-                    Select Plan
+                    $60 monthly
                   </a>
-                </button>
+                  </button>
+                </div>
               </div>
 
               {/* Platinum Membership */}
-              <div className="border border-gray-700 rounded-lg p-8 hover:border-[#10ff00] transition-colors flex flex-col h-full">
-                <h3 className="text-2xl font-bold mb-4 text-center">
+              <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
+                <h3 className="text-2xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
                   Platinum
                 </h3>
-                <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
-                  $75<span className="text-lg text-gray-400">/month</span>
+                <div className="p-8 pt-0 flex-grow flex flex-col">
+                  <div className="text-4xl font-bold text-center mb-6 text-[#10ff00]">
+                  $75<span className="text-lg text-black">/month</span>
                 </div>
                 <ul className="space-y-4 flex-grow">
                   <li className="flex items-center">
@@ -145,15 +150,16 @@ export default function Home() {
                     <span className="text-[#10ff00] mr-2">✓</span>
                     Monthly technique assessment
                   </li>
-                </ul>
-                <button className="w-full bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-[#10ff00] transition-colors">
+                  </ul>
+                  <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
                   <a
                     href="https://www.vagaro.com/cl/pi5RmUyanXxWwI6tndXL41qAs~2d1bWoU-rE28wHAAQ="
                     target="_blank"
                   >
-                    Select Plan
+                    $75 monthly
                   </a>
-                </button>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
