@@ -85,31 +85,31 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Silver Membership */}
               <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
-                <h3 className="text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
-                  Silver
+                <h3 className="min-h-[100px] text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
+                  SILVER
                 </h3>
                 <div className="p-8 pt-0 flex-grow flex flex-col">
                   <ul className="space-y-4 flex-grow text-black text-2xl">
                     <li className="flex items-center">
-                      ACCESS <br /> WEEKDAY 3:30 PM - 9 PM
+                      UNLIMMITIED BALLS <br /> 4-5PM MONDAY - FRIDAY
                     </li>
                     <li className="flex items-center">SHARED CAGES</li>
-                    <li className="flex items-center">45 SWINGS EVERY DAY</li>
+                    <li className="flex items-center">BAT & HELMET STORAGE</li>
                     <li className="flex items-center font-bold">
-                      $5 FOR EXTRA BUCKET
+                      DISCOUNT FOR EXTRA BUCKETS
                     </li>
                     <li className="flex items-center font-bold">
-                      10% OFF PURCHASES AND CLASSES
+                      10% OFF PURCHASES & CLASSES
                     </li>
                   </ul>
-                  <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
+                  <button className="h-[100px] w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
                     <a
                       href="https://www.vagaro.com/cl/uftQ7gHMdHuxbk9lr95qOFporscEq8cEf-n4zx-IqFQ="
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center"
                     >
-                      <span className="text-4xl">$45</span>
+                      <span className="text-5xl">$45</span>
                       <span className="text-sm">monthly</span>
                     </a>
                   </button>
@@ -118,35 +118,34 @@ export default function Home() {
 
               {/* Gold Membership */}
               <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
-                <h3 className="text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
-                  Gold
+                <h3 className="min-h-[100px] text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
+                  GOLD
                 </h3>
                 <div className="p-8 pt-0 flex-grow flex flex-col">
                   <ul className="space-y-4 flex-grow text-black text-2xl">
                     <li className="flex items-center">
-                      WEEKDAY AND WEEKEND ACCESS
+                      UNLIMITED BALLS <br />
+                      4-5PM MONDAY - FRIDAY <br /> 4-6PM SATURDAY & SUNDAY
                     </li>
                     <li className="flex items-center">
                       BRING A FRIEND FOR FREE
                     </li>
-                    <li className="flex items-center">
-                      2.5 HOURS WEEKLY + VIRTUAL BATTING
-                    </li>
+                    <li className="flex items-center">VIRTUAL BATTING</li>
                     <li className="flex items-center font-bold">
-                      $10 FOR EXTRA HOUR
+                      50% OFF BUCKERTS
                     </li>
                     <li className="flex items-center font-bold">
                       10% OFF PURCHASES AND CLASSES
                     </li>{" "}
                   </ul>
-                  <button className="w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
+                  <button className="h-[100px] w-full bg-[#10ff00] text-black font-bold py-3 px-6 hover:bg-white transition-colors">
                     <a
                       href="https://www.vagaro.com/cl/DaQegUQ305Bsr6sFBZ4B3jH0uGERbapdqFbSl~Zgo8s="
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center"
                     >
-                      <span className="text-4xl">$60</span>
+                      <span className="text-5xl">$60</span>
                       <span className="text-sm">monthly</span>
                     </a>
                   </button>
@@ -155,9 +154,11 @@ export default function Home() {
 
               {/* Platinum Membership */}
               <div className="border border-gray-700 rounded-lg hover:border-[#10ff00] transition-colors flex flex-col h-full bg-[#8f9480]">
-                <h3 className="text-6xl font-bold mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
-                  Platinum
-                </h3>
+                <div className="min-h-[100px] mb-4 text-center bg-[#10ff00] text-black w-full px-8 py-2">
+                  <h3 className="text-6xl font-bold ">PLATINUM</h3>
+                  <p className="text-md font-bold ">ONLY 65 AVAILABLE</p>
+                </div>
+
                 <div className="p-8 pt-0 flex-grow flex flex-col">
                   <ul className="space-y-4 flex-grow text-black text-2xl">
                     <li className="flex items-center">
@@ -171,14 +172,14 @@ export default function Home() {
                       15% OFF PRUCHASES AND CLASSES
                     </li>
                   </ul>
-                  <button className="w-full bg-[#10ff00] text-black font-bold pt-3 px-6 hover:bg-white transition-colors">
+                  <button className="h-[100px] w-full bg-[#10ff00] text-black font-bold pt-3 px-6 hover:bg-white transition-colors">
                     <a
                       href="https://www.vagaro.com/cl/pi5RmUyanXxWwI6tndXL41qAs~2d1bWoU-rE28wHAAQ="
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex flex-col items-center"
                     >
-                      <span className="text-4xl">$75</span>
+                      <span className="text-5xl">$75</span>
                       <span className="text-sm">monthly</span>
                     </a>
                   </button>
