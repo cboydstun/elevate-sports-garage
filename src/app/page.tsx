@@ -132,7 +132,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">VIRTUAL BATTING</li>
                     <li className="flex items-center font-bold">
-                      50% OFF BUCKERTS
+                      50% OFF BUCKETS
                     </li>
                     <li className="flex items-center font-bold">
                       10% OFF PURCHASES AND CLASSES
